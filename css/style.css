@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,700&display=swap');
+
+
+*{
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+}
+
+#cabeçalho{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#controls div{
+    padding: 10px;
+}
+
+span{
+    text-align: center
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 24px;
+    color: #fff;
+    background: #f22;
+    font-weight: bold;
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s
+}
+
+button:hover{
+    background: rgb(128, 255, 0);
+}
+
+table{
+    margin: 20px auto;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+td{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+img{
+    width: 80%;
+}
+
+.has_queen{
+    background-image: url("../img/rainha.png");
+    background-color: rgba(255, 0, 0, .6)
+}
+
+.no_queen{
+    background-color: #aaa
+}
+
+.row{
+    display: flex;
+    border-bottom: 1px #000 solid;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.goal :nth-child(even) :nth-child(even){
+    background: #d4d4d4;
+}
+
+.goal :nth-child(odd) :nth-child(odd){
+    background: #000;
+}
+
+.goal .has_queen,
+.goal .has_queen img{
+    background-color: rgb(151, 151, 255) !important;
+    border-radius: 5px;
+    z-index: 9999;
+}
